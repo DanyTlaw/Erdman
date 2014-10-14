@@ -12,7 +12,7 @@ public class CharController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
-		anim.SetBool ("isLeft", true);
+
 	}
 
 
@@ -27,7 +27,8 @@ public class CharController : MonoBehaviour {
 			anim.SetBool("walkLeft", true);
 			
 			rigidbody2D.velocity = new Vector2(-speed * maxSpeed, rigidbody2D.velocity.y);
-			
+
+
 		}
 
 
